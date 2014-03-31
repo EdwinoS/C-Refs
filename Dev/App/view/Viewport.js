@@ -1,18 +1,77 @@
 Ext.define('CRefs.view.Viewport', {
     extend: 'Ext.container.Viewport',
-    layout: 'fit',
+    layout: 'border',
     itemId: 'viewport',
     items: [
         {
-            xtype: 'window',
-            title: 'Hello World',
-            height: 200,
-            width: 400,
+            region: 'west',
+            border: true,
+            split: true,
+            width: 275,
+            minWidth: 150,
+            maxWidth: 400,
+            collapsible: true,
+            animCollapse: true,
+            title: 'Treepanel',
+            itemId: 'treepanel',
+            titleCollapse: true,
+            tbar: [
+                {
+                    xtype: 'triggerfield',
+                    flex:1,
+                    emptyText: 'Search Field',
+                    trigger1Cls: Ext.baseCSSPrefix + 'form-search-trigger'
+                }
+            ],
+            items:[
+                {html: 'Treepanel'}
+            ]
+        },
+        {
+            region: 'center',
+            xtype: 'tabpanel',
             layout: 'fit',
-            autoShow: true,
-            items: {
-                html: 'Olá Mundo!!!'
-            }
+            itemId: 'centerpanel',
+            defaults: {
+                closable: true
+            },
+            tabBar: {
+                defaults : {
+                    flex  : 1
+                }
+            },
+            
+            items: [
+                {
+                    title: 'Home',
+                    closable: false,
+                    tabConfig: {
+                        width: 65,
+                        flex: 0
+                    },
+                    items:[
+                        {
+                            html: 'Home Screen'
+                        }
+                    ]
+                },
+                {
+                    title: 'Tab 2',
+                    items:[
+                        {
+                            html: 'Screen 2'
+                        }
+                    ]
+                },
+                {
+                    title: 'Tab 3',
+                    items:[
+                        {
+                            html: 'Screen 3'
+                        }
+                    ]
+                }
+            ]
         }
     ]
     
