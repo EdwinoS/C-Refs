@@ -7,7 +7,9 @@
 dataLoader = {
     dataDir: 'App/data/',
 
-    dataContents: [],
+    dataContents: [
+        'Indexes'
+    ],
     
     data: {},
 
