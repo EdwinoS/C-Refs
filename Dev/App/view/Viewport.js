@@ -7,12 +7,12 @@ Ext.define('CRefs.view.Viewport', {
             region: 'west',
             border: true,
             split: true,
-            width: 275,
+            width: 220,
             minWidth: 150,
             maxWidth: 400,
             collapsible: true,
             animCollapse: true,
-            title: 'Treepanel',
+            title: 'C References',
             itemId: 'treepanel',
             titleCollapse: true,
             tbar: [
@@ -24,7 +24,11 @@ Ext.define('CRefs.view.Viewport', {
                 }
             ],
             items:[
-                {html: 'Treepanel'}
+                {
+                    xtype: 'treepanel',
+                    store: 'CRefs.store.Indexes',
+                    rootVisible: false
+                }
             ]
         },
         {
