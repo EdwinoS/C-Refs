@@ -5,6 +5,10 @@ Ext.application({
     //Pasta onde se encontra os arquivos da aplicação
     appFolder: 'App/',
     
+    stores: [
+        'CRefs.store.Indexes'
+    ],
+
     //Define o arquivo App/view/Viewport.js como o viewport da aplicação
     autoCreateViewport: true
 });
