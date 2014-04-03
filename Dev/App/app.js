@@ -4,7 +4,11 @@ Ext.application({
 
     //Pasta onde se encontra os arquivos da aplicação
     appFolder: 'App/',
-    
+
+    controllers:[
+        'CRefs.controller.IndexesTreepanel'
+    ],
+
     stores: [
         'CRefs.store.Indexes'
     ],

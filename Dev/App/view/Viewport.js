@@ -25,9 +25,7 @@ Ext.define('CRefs.view.Viewport', {
             ],
             items:[
                 {
-                    xtype: 'treepanel',
-                    store: 'CRefs.store.Indexes',
-                    rootVisible: false
+                    xtype: 'indexespanel'
                 }
             ]
         },
