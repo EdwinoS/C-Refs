@@ -56,22 +56,6 @@ Ext.define('CRefs.view.Viewport', {
                             html: 'Home Screen'
                         }
                     ]
-                },
-                {
-                    title: 'Tab 2',
-                    items:[
-                        {
-                            html: 'Screen 2'
-                        }
-                    ]
-                },
-                {
-                    title: 'Tab 3',
-                    items:[
-                        {
-                            html: 'Screen 3'
-                        }
-                    ]
                 }
             ]
         }
