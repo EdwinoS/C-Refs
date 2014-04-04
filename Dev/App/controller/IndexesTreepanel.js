@@ -46,10 +46,9 @@ Ext.define('CRefs.controller.IndexesTreepanel', {
             if(!tab){
                 central.add({
                     title: record.raw.itemIndex,
+                    xtype: 'tabframe',
                     itemId: record.raw.itemIndex,
-                    items: [{
-                            html: record.raw.itemIndex
-                    }]
+                    frameName: 'frameSample'
                 });
             }
             central.setActiveTab(record.raw.itemIndex);
