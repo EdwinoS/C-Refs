@@ -1,3 +1,9 @@
+Ext.Loader.setConfig({
+    paths: {
+        'Ext.ux': 'Extjs/ux'
+    }
+});
+
 Ext.application({
     //Namespace da aplicação
     name: 'CRefs',
@@ -11,6 +17,11 @@ Ext.application({
 
     stores: [
         'CRefs.store.Indexes'
+    ],
+
+    views:[
+        'Ext.ux.IFrame',
+        'CRefs.view.TabFrame'
     ],
 
     //Define o arquivo App/view/Viewport.js como o viewport da aplicação
